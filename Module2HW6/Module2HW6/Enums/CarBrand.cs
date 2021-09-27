@@ -10,6 +10,8 @@
         Tesla,
         Toyota,
         Hyundai,
-        Honda
+        Honda,
+        BMW,
+        Porsche
     }
 }

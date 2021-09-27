@@ -17,7 +17,7 @@ namespace Module2HW6.Services
         {
             _carProvider = carProvider;
             _taxiStationProvider = taxiStationProvider;
-            _maxCarsInTaxiStation = 50;
+            _maxCarsInTaxiStation = 20;
         }
 
         public void AddToSection()
@@ -25,7 +25,7 @@ namespace Module2HW6.Services
             Car[] cars = new Car[_maxCarsInTaxiStation];
             for (var i = 0; i < cars.Length; i++)
             {
-                cars[i] = _carProvider.Cars[new Random().Next(0, 11)];
+                cars[i] = _carProvider.Cars[new Random().Next(0, 6)];
                 _taxiStationProvider.TaxiStationCars = cars;
             }
         }

@@ -67,23 +67,10 @@ namespace Module2HW6
                 Console.WriteLine("==================");
                 Console.WriteLine($"Brand: {car.Brand}");
                 Console.WriteLine($"Model: {car.Model}");
-                Console.Write($"Fuel consumption: ");
-                PrintFuelConsumption(car);
+                Console.WriteLine($"Fuel consumption: {car.FuelConsumption} l/100km");
                 Console.WriteLine($"Year of issue: {car.YearOfIssue}");
-                Console.WriteLine($"Price: {car.Price}");
+                Console.WriteLine($"Price: ${car.Price}");
                 Console.WriteLine("==================");
-            }
-        }
-
-        private void PrintFuelConsumption(Car car)
-        {
-            if (car.FuelConsumption == 0)
-            {
-                Console.WriteLine("Electro");
-            }
-            else
-            {
-                Console.WriteLine($"{car.FuelConsumption} l/100km");
             }
         }
     }
